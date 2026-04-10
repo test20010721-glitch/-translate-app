@@ -37,5 +37,3 @@ export async function POST(req) {
   return Response.json({ received: true })
 }
 
-// Stripeのwebhookはbodyをそのまま使うのでbodyParserを無効化
-export const config = { api: { bodyParser: false } }
